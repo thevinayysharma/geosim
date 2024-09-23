@@ -1,0 +1,64 @@
+{
+    "colleges": [
+      {
+        "name": "Delhi Technological University",
+        "final_year_students": {
+          "Computer Science": 120,
+          "Mechanical Engineering": 100,
+          "Electrical Engineering": 90,
+          "Civil Engineering": 80,
+          "Electronics and Communication Engineering": 110
+        }
+      },
+      {
+        "name": "Indian Institute of Technology Delhi",
+        "final_year_students": {
+          "Computer Science": 150,
+          "Mechanical Engineering": 130,
+          "Electrical Engineering": 110,
+          "Civil Engineering": 100,
+          "Biotechnology": 70
+        }
+      },
+      {
+        "name": "Netaji Subhas University of Technology",
+        "final_year_students": {
+          "Computer Science": 140,
+          "Information Technology": 130,
+          "Electronics and Communication Engineering": 120,
+          "Mechanical Engineering": 90,
+          "Instrumentation and Control Engineering": 60
+        }
+      },
+      {
+        "name": "Indraprastha Institute of Information Technology Delhi",
+        "final_year_students": {
+          "Computer Science": 100,
+          "Electronics and Communication Engineering": 80,
+          "Artificial Intelligence": 60,
+          "Mathematics and Computing": 50
+        }
+      },
+      {
+        "name": "Guru Gobind Singh Indraprastha University",
+        "final_year_students": {
+          "Computer Science": 110,
+          "Information Technology": 100,
+          "Mechanical Engineering": 90,
+          "Civil Engineering": 80,
+          "Electrical Engineering": 70
+        }
+      },
+      {
+        "name": "Indraprastha Institute of Information Technology Delhi (IIITD)",
+        "final_year_students": {
+          "Computer Science and Engineering": 120,
+          "Electronics and Communication Engineering": 90,
+          "Computer Science and Applied Mathematics": 50,
+          "Computer Science and Design": 40,
+          "Artificial Intelligence": 60
+        }
+      }
+    ]
+  }
+  
