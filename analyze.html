@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyze Your Career</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: #007bff;
+        }
+
+        .career-chart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .career-chart .chart {
+            width: 300px;
+            height: 300px;
+            background: conic-gradient(
+                #007bff 0% 60%,
+                #ccc 60% 100%
+            );
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .career-chart .chart::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            background: #fff;
+            border-radius: 50%;
+        }
+
+        .career-chart p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .roadmap {
+            margin-bottom: 40px;
+        }
+
+        .roadmap h2 {
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        .roadmap ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .roadmap li {
+            margin-bottom: 10px;
+            background: #f9f9f9;
+            padding: 10px 15px;
+            border-left: 4px solid #007bff;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .resources {
+            margin-bottom: 20px;
+        }
+
+        .resources h2 {
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        .resources a {
+            display: block;
+            margin-bottom: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .resources a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .career-chart .chart {
+                width: 200px;
+                height: 200px;
+            }
+
+            .career-chart .chart::after {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Analyze Your Career</h1>
+
+        <div class="career-chart">
+            <div class="chart"></div>
+            <p>You are currently at <strong>60%</strong> of your target roll.</p>
+        </div>
+
+        <div class="roadmap">
+            <h2>Your Career Roadmap</h2>
+            <ul>
+                <li>1. Complete a foundational course in <strong>data analysis</strong>.</li>
+                <li>2. Gain experience by working on <strong>freelance projects</strong>.</li>
+                <li>3. Learn advanced tools like <strong>Python for data visualization</strong>.</li>
+                <li>4. Obtain certifications in <strong>data science</strong> or <strong>machine learning</strong>.</li>
+                <li>5. Build a portfolio to showcase your work.</li>
+            </ul>
+        </div>
+
+        <div class="resources">
+            <h2>Recommended Resources</h2>
+            <a href="https://www.coursera.org" target="_blank">Coursera: Online Learning Platform</a>
+            <a href="https://www.udemy.com" target="_blank">Udemy: Skill Courses</a>
+            <a href="https://www.kaggle.com" target="_blank">Kaggle: Data Science Community</a>
+            <a href="https://www.edx.org" target="_blank">edX: University Courses</a>
+        </div>
+    </div>
+</body>
+</html>
