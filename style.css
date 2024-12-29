@@ -1,3 +1,4 @@
+/* Global Reset */
 * {
     margin: 0px;
     padding: 0px;
@@ -53,7 +54,7 @@ body {
 .platform-box {
     flex: 1;
     max-width: 300px;
-    padding: 40px 20px;
+    padding: 30px 20px;
     text-align: center;
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -78,7 +79,6 @@ body {
     color: #333;
 }
 
-
 /* Divider Styling */
 .divider {
     height: 1px;
@@ -89,6 +89,80 @@ body {
     transform: translateX(-50%);
 }
 
+/* About Us Section */
+.about-section {
+    text-align: left;
+    padding: 30px 20px;
+    background: #fef9c3;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section  {
+    background-color: #fffbeb;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.about-section .read-more {
+    color: grey;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-section .read-more:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: #475569;
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.footer-section {
+    max-width: 200px;
+}
+
+.footer-section h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.footer-section p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.footer-section i {
+    font-size: 1.2rem;
+}
+
+.footer-section a.footer-link {
+    color: #eb2c25; /* A pleasant blue color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-section a.footer-link:hover {
+    text-decoration: underline;
+    color: #1e40af; /* Slightly darker blue for hover */
+}
+
+
 /* Media Query for Responsiveness */
 @media (max-width: 768px) {
     .platform-boxes {
@@ -96,14 +170,21 @@ body {
     }
 
     .divider {
-        width: 80%;
+        width: 80%; 
         height: 1px;
         margin: 10px 0;
     }
-}
 
-@media (max-width: 768px) {
     .body-central h1 {
         font-size: 2.5rem; /* Responsive adjustment for smaller screens */
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-section {
+        max-width: 100%;
     }
 }

@@ -21,7 +21,7 @@ How can you contribute?
 We are a tiny systematic work in progress. You can help us & earn by building “required tools”, supporting us with data. See the Contributing doc.
 
 
-
+GeoSim is the platform to discover, analyze and experiment with data about your career decisions. We provide hidden information maps and "tools" of growth customized for you. Analyze your talent, geographical constraints and hidden marketforces acting inside Indian Economy.
 
 
 TODO's:
