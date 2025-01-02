@@ -34,6 +34,10 @@ building abackground images
 
 
 
+More data - customized - with metrics
+set css for whole files and build more eye-friendly coloring
+refactor analyuze.html, footer and everything in general./
+
 
 
 
