@@ -1,130 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explore Fields and Skills</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
 
-        .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
-            background: whitesmoke;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+      .container {
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 20px;
+        background: whitesmoke;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
 
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 2.5rem;
-            color: #007bff;
-        }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+        color: #007bff;
+      }
 
-        .checkbox-group {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
+      .checkbox-group {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
 
-        .checkbox-group label {
-            cursor: pointer;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+      .checkbox-group label {
+        cursor: pointer;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
 
-        .fields {
-            margin-top: 20px;
-            display: none;
-        }
+      .fields {
+        margin-top: 20px;
+        display: none;
+      }
 
-        .fields.active {
-            display: block;
-        }
+      .fields.active {
+        display: block;
+      }
 
-        h2 {
-            color: #333;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
-        }
+      h2 {
+        color: #333;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 5px;
+      }
 
-        p {
-            margin-bottom: 10px;
-        }
+      p {
+        margin-bottom: 10px;
+        cursor: pointer;
+        color: #007bff;
+        text-decoration: underline;
+      }
+
+      /* Modal Styles */
+      .modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 80%;
+        max-width: 600px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+      }
+
+      .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .modal-header h3 {
+        margin: 0;
+      }
+
+      .modal-body {
+        margin-top: 10px;
+      }
+
+      .modal.active,
+      .modal-overlay.active {
+        display: block;
+      }
     </style>
-    <script>
-        function toggleFields(category) {
-            const fieldSections = document.querySelectorAll('.fields');
-            fieldSections.forEach(section => section.classList.remove('active'));
-
-            const activeSection = document.getElementById(category);
-            if (activeSection) {
-                activeSection.classList.add('active');
-            }
-        }
-    </script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>Explore Fields and Skills</h1>
+      <h1>Explore Fields and Skills</h1>
 
-        <div class="checkbox-group">
-            <label>
-                <input type="radio" name="category" onclick="toggleFields('science')">
-                <i class="fas fa-flask"></i> Science
-            </label>
-            <label>
-                <input type="radio" name="category" onclick="toggleFields('commerce')">
-                <i class="fas fa-chart-line"></i> Commerce
-            </label>
-            <label>
-                <input type="radio" name="category" onclick="toggleFields('arts')">
-                <i class="fas fa-paint-brush"></i> Arts
-            </label>
-        </div>
+      <div class="checkbox-group">
+        <label>
+          <input
+            type="radio"
+            name="category"
+            onclick="toggleFields('science')"
+          />
+          <i class="fas fa-flask"></i> Science
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="category"
+            onclick="toggleFields('commerce')"
+          />
+          <i class="fas fa-chart-line"></i> Commerce
+        </label>
+        <label>
+          <input type="radio" name="category" onclick="toggleFields('arts')" />
+          <i class="fas fa-paint-brush"></i> Arts
+        </label>
+      </div>
 
-        <div id="science" class="fields">
-            <h2>Science</h2>
-            <p><strong>Engineering:</strong> Robotics ( small niche products), Haptics Creation for Personalized Entertainment Zones.</p>
-            <p><strong>Semiconductor: </strong> PCB design, Software stack for chips, Chip design .</p>
-            <p><strong>AI: </strong> Agentic ( autonomous engineering), Systems and Infrastructural(deep learning compiler engineering), Algorithmic ( core ML) .</p>
-            <p><strong>Freelance:</strong> Specialist in manufacturing small operations, R&D worklabs operator (3D printers, CAD, CNCs).</p>
-            <p><strong>Pure Sciences:</strong> Material Science, Chemistry, Physics, and Mathematics.</p>
-            <p><strong>Trends:</strong> GeoEngineering, Climate Engineering, Cloud Seeding, Plastic Pollution Management, manufacturing pipeline ( s/w based in US)</p>
-        </div>
+      <div id="science" class="fields">
+        <h2>Science</h2>
+        <p>
+          <strong>Engineering:</strong>
+          <span data-skill="Robotics">Robotics</span>,
+          <span data-skill="Haptics"
+            >Haptics Creation for Personalized Entertainment Zones</span
+          >
+        </p>
+        <p>
+          <strong>Semiconductor:</strong>
+          <span data-skill="PCB Design">PCB Design</span>,
+          <span data-skill="Software Stack">Software Stack for Chips</span>,
+          <span data-skill="Chip Design">Chip Design</span>
+        </p>
+        <p>
+          <strong>AI:</strong>
+          <span data-skill="Agentic">Agentic (Autonomous Engineering)</span>,
+          <span data-skill="Infrastructural AI"
+            >Systems and Infrastructural (Deep Learning Compiler
+            Engineering)</span
+          >,
+          <span data-skill="Algorithmic AI">Algorithmic (Core ML)</span>
+        </p>
+        <p>
+          <strong>Freelance:</strong>
+          <span data-skill="Manufacturing Specialist"
+            >Specialist in Manufacturing Small Operations</span
+          >,
+          <span data-skill="R&D Operator"
+            >R&D Worklabs Operator (3D Printers, CAD, CNCs)</span
+          >
+        </p>
+        <p>
+          <strong>Pure Sciences:</strong>
+          <span data-skill="Material Science">Material Science</span>,
+          <span data-skill="Chemistry">Chemistry</span>,
+          <span data-skill="Physics">Physics</span>,
+          <span data-skill="Mathematics">Mathematics</span>
+        </p>
+        <p>
+          <strong>Trends:</strong>
+          <span data-skill="GeoEngineering">GeoEngineering</span>,
+          <span data-skill="Climate Engineering">Climate Engineering</span>,
+          <span data-skill="Cloud Seeding">Cloud Seeding</span>,
+          <span data-skill="Plastic Pollution Management"
+            >Plastic Pollution Management</span
+          >,
+          <span data-skill="Manufacturing Pipeline"
+            >Manufacturing Pipeline (Software-based in US)</span
+          >
+        </p>
+      </div>
 
-        <div id="commerce" class="fields">
-            <h2>Commerce</h2>
-            <p><strong>Quantitative Fields:</strong> Quantitative trading, Statistician, Taxation, Applied Economics Modeling, Actuarial Science.</p>
-            <p><strong>Healthcare and Business:</strong> Business analytics, Blockchain-fintech, Healthcare management.</p>
-            <p><strong>Certifications:</strong> CFA, CMA, CA, PMP, Consulting (Six Sigma).</p>
-            <p><strong>Startups and Corporate:</strong> Roles in startups and corporate environments.</p>
-        </div>
+      <div id="commerce" class="fields">
+        <h2>Commerce</h2>
+        <p>
+          <strong>Trends:</strong>
+          <span data-skill="Quantitative Trading">Quantitative Trading</span>,
+          <span data-skill="Statistician">Statistician</span>,
+          <span data-skill="Taxation">Taxation</span>,
+          <span data-skill="Applied Economics Modeling">Applied Economics Modeling</span>,
+          <span data-skill="Actuarial Science">Actuarial Science</span>
+        </p>
+        <p>
+          <strong>Healthcare and Business:</strong>
+          <span data-skill="Business Analytics">Business Analytics</span>,
+          <span data-skill="Blockchain-Fintech">Blockchain-Fintech</span>,
+          <span data-skill="Healthcare Management">Healthcare Management</span>
+        </p>
+        <p>
+          <strong>Certifications:</strong>
+          <span data-skill="CFA">CFA</span>,
+          <span data-skill="CMA">CMA</span>,
+          <span data-skill="CA">CA</span>,
+          <span data-skill="PMP">PMP</span>,
+          <span data-skill="Consulting-Six Sigma">Consulting (Six Sigma)</span>
+        </p>
+        <p>
+          <strong>Startups and Corporate:</strong>
+          <span data-skill="Startup Roles">Startup Roles</span>,
+          <span data-skill="Corporate Roles">Corporate Roles</span>
+        </p>
+      </div>
+      
+      <div id="arts" class="fields">
+        <h2>Arts</h2>
+        <p>
+          <strong>Trends:</strong>
+          <span data-skill="Fictional Numerical Arts">Fictional Numerical Arts</span>,
+          <span data-skill="Liberal Arts">Liberal Arts</span>,
+          <span data-skill="Kinesthetic Artmanship">Kinesthetic Artmanship</span>,
+          <span data-skill="Entertainment Theaters">Entertainment Theaters (haptics and senior fusion)</span>
+        </p>
+        <p>
+          <strong>Personalized Attention:</strong>
+          <span data-skill="Philosophy">Philosophy</span>,
+          <span data-skill="Oratory">Oratory</span>,
+          <span data-skill="Personalized Listening Spaces">Personalized Listening Spaces</span>
+        </p>
+        <p>
+          <strong>Literature:</strong>
+          <span data-skill="Philosophy & Artists' Works">Philosophy & Artists’ Works</span>,
+          <span data-skill="Video Creation">Video Creation</span>,
+          <span data-skill="Documentaries">Documentaries</span>,
+          <span data-skill="Niche Skillsets">Niche Skillsets (material, food, health, clothing, how-to videos)</span>
+        </p>
+        <p>
+          <strong>Entertainment:</strong>
+          <span data-skill="Event Management">Event Management (Technical Direction, LED and Light Designing)</span>,
+          <span data-skill="Design">Design</span>,
+          <span data-skill="AR Hardware">AR Hardware</span>,
+          <span data-skill="Special Projects">Special Projects (Electronics)</span>,
+          <span data-skill="3D Printing">3D Printing</span>,
+          <span data-skill="Immersive Arts">Immersive Arts (philosophical, character building, audio engineering, scenography)</span>,
+          <span data-skill="Game Design">Game Design</span>,
+          <span data-skill="Haptics - Product Design">Haptics - Product Design for Software Vehicles & Entertainment Zones</span>,
+          <span data-skill="Game Development">Game Development</span>
+        </p>
+      </div>
+      
 
-        <div id="arts" class="fields">
-            <h2>Arts</h2>
-            <p>The perception of arts will be drastically change in India by viewing applied arts as a source of Income and as a path to creativistic liberation.</p>
-            <p><strong>Creative Fields:</strong> Fictional Numerical Arts, Liberal Arts,  Kinesthetic artmanship, Entertainment Theaters (haptics and senior fusion).</p>
-            <p><strong>Personalized Attention:</strong> Philosophy, Oratory, and Personalized listening spaces.</p>
-            <p><strong>Literature:</strong> Philosophy & Artists’ works, Video Creation, Documentaries, Niche skillsets in (material, food, health, clothing, howto videos),</p>
-            <p><strong>Entertainment: </strong> Event management (Technical direction, LED and Ligth designing ), design, 
-                AR Hardware, Special Projects (electronics), 3D printing, Immersive arts( philosophical, character building, audio engineering, sceneogrpahy), game design,
-                Haptics - Product design for Software Vehicles & Entertainment Zones, Game development,</p>
-        </div>
+    <!-- Modal -->
+    <div class="modal-overlay"></div>
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="modal-title">Skill Information</h3>
+        <button id="modal-close">Close</button>
+      </div>
+      <div class="modal-body" id="modal-content">
+        <!-- Dynamic content goes here -->
+      </div>
     </div>
-</body>
+
+    <script>
+     let data = {};
+
+// Fetch data from the data.json file
+fetch('data.json')
+  .then(response => response.json()) // Parse the JSON file
+  .then(jsonData => {
+    data = jsonData; // Assign the fetched data to the `data` object
+  })
+  .catch(error => {
+    console.error("Error loading data:", error); // Handle errors
+  });
+
+      // Toggle fields based on selected category
+      function toggleFields(category) {
+        const fieldSections = document.querySelectorAll(".fields");
+        fieldSections.forEach((section) => section.classList.remove("active"));
+
+        const activeSection = document.getElementById(category);
+        if (activeSection) {
+          activeSection.classList.add("active");
+        }
+      }
+
+      // Modal logic
+
+      // Modal logic
+      document.querySelectorAll(".fields span").forEach((item) => {
+        item.addEventListener("click", () => {
+          const skill = item.getAttribute("data-skill");
+          const skillData = data[skill];
+
+          if (skillData) {
+            document.getElementById("modal-title").textContent = skill;
+            document.getElementById("modal-content").innerHTML = `
+                <p><strong>Geographical Info:</strong> ${skillData["Geographical Info"]}</p>
+                <p><strong>Academic:</strong> ${skillData["Academic"]}</p>
+                <p><strong>Employment & Markets:</strong> ${skillData["Employment & Markets"]}</p>
+                <p><strong>Meta Trends:</strong> ${skillData["Meta Trends"]}</p>
+            `;
+
+            document.querySelector(".modal").classList.add("active");
+            document.querySelector(".modal-overlay").classList.add("active");
+          }
+        });
+      });
+
+      document.getElementById("modal-close").addEventListener("click", () => {
+        document.querySelector(".modal").classList.remove("active");
+        document.querySelector(".modal-overlay").classList.remove("active");
+      });
+
+      document.querySelector(".modal-overlay").addEventListener("click", () => {
+        document.querySelector(".modal").classList.remove("active");
+        document.querySelector(".modal-overlay").classList.remove("active");
+      });
+
+      document.getElementById("modal-close").addEventListener("click", () => {
+        document.querySelector(".modal").classList.remove("active");
+        document.querySelector(".modal-overlay").classList.remove("active");
+      });
+
+      document.querySelector(".modal-overlay").addEventListener("click", () => {
+        document.querySelector(".modal").classList.remove("active");
+        document.querySelector(".modal-overlay").classList.remove("active");
+      });
+    </script>
+  </body>
 </html>
- 

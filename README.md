@@ -26,7 +26,7 @@ GeoSim is the platform to discover, analyze and experiment with data about your 
 
 TODO's:
 settinh up alignments - majorly of all pages and ssetting up styles
-filling up stativ information
+filling up stativ information - skeleton to be built
 building abackground images
 
 
@@ -37,6 +37,46 @@ building abackground images
 More data - customized - with metrics
 set css for whole files and build more eye-friendly coloring
 refactor analyuze.html, footer and everything in general./
+
+
+Stream: Science
+Skill: PCB Design
+
+Industry: Semiconductors, Electronics
+
+Geographical Info:
+ Talent density, 
+ professional growth, 
+ countries favoring this skill,
+  education hierarchy, 
+  talent mobilization.
+
+
+Academic: 
+Elite courses, 
+graduation data, 
+scholarships, 
+competitions, 
+research opportunities, 
+education roadmaps.
+
+
+
+Employment & Markets: 
+Job numbers, 
+major job classifications,
+ key figures,
+  companies, 
+  business profiles,
+   hiring trends.
+
+
+Meta Trends: 
+Past, present, future trends, 
+government policies, 
+insights, 
+first-mover ideas. 
+
 
 
 
