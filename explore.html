@@ -64,12 +64,18 @@
         padding-bottom: 5px;
       }
 
-      p {
+      p a {
         margin-bottom: 10px;
         cursor: pointer;
         color: #007bff;
         text-decoration: underline;
       }
+
+      span[data-skill]:hover {
+       text-decoration: underline; /* Only underline the skill span */
+       cursor: pointer; /* Show pointer cursor on hover */
+       color: #007bff; /* Keep the blue color on hover */
+     }
 
       /* Modal Styles */
       .modal-overlay {
@@ -79,7 +85,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.7); /* Dark overlay for modal */
         z-index: 999;
       }
 
@@ -116,6 +122,10 @@
       .modal-overlay.active {
         display: block;
       }
+
+
+  
+
     </style>
   </head>
   <body>
