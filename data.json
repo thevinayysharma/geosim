@@ -1,13 +1,13 @@
 {
     "Robotics": {
       "Geographical Info": "Research hubs: US, Germany, Japan.",
-      "Academic": "Courses in mechatronics and AI.",
+      "Academic": "Best Universities: CMU | Courses: mechatronics and AI.",
       "Employment & Markets": "Growth in automation industries.",
       "Meta Trends": "AI and robotics convergence."
     },
     "Haptics": {
       "Geographical Info": "Leading nations: Japan, US.",
-      "Academic": "Specialized in sensory tech.",
+      "Academic": "coures: audio, material engineering | Specialized in sensory tech.",
       "Employment & Markets": "Gaming and entertainment industries.",
       "Meta Trends": "Immersive tech evolution."
     },
@@ -19,14 +19,14 @@
     },
     "PCB Design": {
       "Geographical Info": "India and China are leaders in PCB manufacturing.",
-      "Academic": "Certification programs for PCB design and analysis.",
-      "Employment & Markets": "Electronics and hardware startups thrive here.",
-      "Meta Trends": "Miniaturization of electronics."
+      "Academic": "Certification programs for PCB design and analysis. | Website: PCBWay",
+      "Employment & Markets": "Electronics and hardware startups",
+      "Meta Trends": "Miniaturization of electronics, custom application boards and consumer applications"
     },
     "Software Stack": {
       "Geographical Info": "Silicon Valley remains dominant.",
       "Academic": "Courses in embedded systems and chip programming.",
-      "Employment & Markets": "Demand in chip-based software industries.",
+      "Employment & Markets": "Demand in chip-based software industries, AI hardware companies",
       "Meta Trends": "Integration of AI with low-level systems."
     },
     "Chip Design": {
@@ -36,21 +36,21 @@
       "Meta Trends": "Designing energy-efficient chips."
     },
     "Agentic": {
-      "Geographical Info": "Emerging from global AI hubs.",
-      "Academic": "Focus on autonomous system design.",
+      "Geographical Info": "Emerging from global AI hubs like China, US",
+      "Academic": "Get into building Newer AI models instances.",
       "Employment & Markets": "Growth in autonomous tech.",
       "Meta Trends": "AI-driven decision-making systems."
     },
     "Infrastructural AI": {
       "Geographical Info": "US and India lead in infrastructure AI.",
       "Academic": "Courses in compiler engineering and deep learning systems.",
-      "Employment & Markets": "Demand in cloud and data infrastructure.",
+      "Employment & Markets": "Demand in cloud and data infrastructure, data center providers",
       "Meta Trends": "Optimizing AI for hardware."
     },
     "Algorithmic AI": {
       "Geographical Info": "Focus on global algorithm research labs.",
       "Academic": "Courses on advanced machine learning.",
-      "Employment & Markets": "Research and data-driven industries.",
+      "Employment & Markets": "Research and data-driven industries like Quant",
       "Meta Trends": "Evolution of large-scale models."
     },
     "Manufacturing Specialist": {
@@ -62,7 +62,7 @@
     "R&D Operator": {
       "Geographical Info": "Centers in Europe and North America.",
       "Academic": "Focus on R&D certifications.",
-      "Employment & Markets": "Growth in prototyping industries.",
+      "Employment & Markets": "Growth in prototyping industries liek CAD and simulation based.",
       "Meta Trends": "Open-source tools for innovation."
     },
     "Material Science": {
@@ -75,13 +75,13 @@
       "Geographical Info": "Global centers in the US and UK.",
       "Academic": "Advanced chemical engineering programs.",
       "Employment & Markets": "Opportunities in pharmaceuticals and energy.",
-      "Meta Trends": "Sustainable chemistry innovation."
+      "Meta Trends": "Sustainable chemistry innovation, climatology."
     },
     "Physics": {
       "Geographical Info": "Research hotspots in Switzerland and the US.",
       "Academic": "Programs in quantum mechanics and applied physics.",
       "Employment & Markets": "High-tech research industries.",
-      "Meta Trends": "Quantum computing advancements."
+      "Meta Trends": "Quantum computing advancements, defense ,spacetech"
     },
     "Mathematics": {
       "Geographical Info": "Math research centers globally.",
@@ -113,7 +113,7 @@
       "Employment & Markets": "Focus on automation and integration.",
       "Meta Trends": "Expansion of AI in pipelines."
     },
-   "Quantitative Trading": {
+    "Quantitative Trading": {
           "Geographical Info": "Opportunities in quant firms in financial hubs like NYC and London.",
           "Academic": "Programs in financial engineering and data analysis.",
           "Employment & Markets": "Opportunities in quantitative trading firms and financial markets.",
@@ -133,7 +133,7 @@
         },
         "Applied Economics Modeling": {
           "Geographical Info": "Academic and industry hubs in major economic centers like the US and EU.",
-          "Academic": "Advanced courses in economics and econometrics.",
+          "Academic": "Advanced courses in economics and econometrics from universy like Delhi school of Economics",
           "Employment & Markets": "Opportunities in consulting firms, research, and policy-making.",
           "Meta Trends": "Use of data models for economic forecasting and policy analysis."
         },
@@ -221,11 +221,107 @@
           "Employment & Markets": "Opportunities in performance arts, museums, and galleries.",
           "Meta Trends": "Increasing fusion of physical arts with immersive technologies like VR and AR."
         },
-        "Entertainment Theaters (haptics and senior fusion)": {
+        "Entertainment Theaters": {
           "Geographical Info": "Opportunities in theater cities and entertainment hubs.",
           "Academic": "Programs in immersive theater, haptic technology, and live performances.",
           "Employment & Markets": "Growing demand in theater productions integrating technology for interactive experiences.",
           "Meta Trends": "Rise of immersive experiences blending traditional theater with modern technology."
-        }
+        },     
+  "Philosophy": {
+    "Geographical Info": "Strong presence in academic institutions worldwide, with philosophical discourse thriving in Europe, India, and the US.",
+    "Academic": "Courses in ethics, metaphysics, logic, and existentialism.",
+    "Employment & Markets": "Opportunities in academia, writing, consulting, and think tanks.",
+    "Meta Trends": "Growing intersection with AI ethics, political thought, and human-computer interaction."
+  },
+  "Oratory": {
+    "Geographical Info": "Developed through institutions, debate clubs, and leadership training worldwide.",
+    "Academic": "Programs in public speaking, rhetoric, and persuasive communication.",
+    "Employment & Markets": "Careers in politics, media, education, and corporate leadership.",
+    "Meta Trends": "Increasing demand for effective communication in digital and hybrid workspaces."
+  },
+  "Personalized Listening Spaces": {
+    "Geographical Info": "Emerging in major urban centers with strong podcasting and audio entertainment industries.",
+    "Academic": "Courses in audio engineering, spatial audio, and content curation.",
+    "Employment & Markets": "Opportunities in podcasting, audio branding, and immersive storytelling.",
+    "Meta Trends": "Personalized AI-driven audio experiences and adaptive sound environments."
+  },
+  "Philosophy& Artists Works": {
+    "Geographical Info": "Thrive in cultural hubs like Paris, New York, and Tokyo.",
+    "Academic": "Interdisciplinary studies combining philosophy, aesthetics, and art history.",
+    "Employment & Markets": "Roles in curatorial work, art criticism, and creative writing.",
+    "Meta Trends": "Growing demand for philosophical discourse in digital and experiential art."
+  },
+  "Video Creation": {
+    "Geographical Info": "Dominates social media and entertainment industries worldwide.",
+    "Academic": "Courses in film production, video editing, and digital storytelling.",
+    "Employment & Markets": "Opportunities in content creation, advertising, and filmmaking.",
+    "Meta Trends": "Rise of short-form content and AI-assisted video production."
+  },
+  "Documentaries": {
+    "Geographical Info": "Flourishing in film festivals and streaming platforms globally.",
+    "Academic": "Programs in journalism, film studies, and investigative storytelling.",
+    "Employment & Markets": "Careers in media, broadcasting, and independent filmmaking.",
+    "Meta Trends": "Growing interest in socially impactful and immersive storytelling."
+  },
+  "Niche Skillsets": {
+    "Geographical Info": "Expanding across diverse industries including material sciences, culinary arts, and wellness.",
+    "Academic": "Specialized training in focused domains such as craftsmanship, nutrition, and technical trades.",
+    "Employment & Markets": "Roles in product innovation, sustainable living, and digital education.",
+    "Meta Trends": "Rise of micro-learning platforms and independent skill monetization."
+  },
+  "Event Management": {
+    "Geographical Info": "Strong demand in corporate and entertainment industries worldwide.",
+    "Academic": "Courses in logistics, stage production, and technical direction.",
+    "Employment & Markets": "Opportunities in large-scale productions, concerts, and digital events.",
+    "Meta Trends": "Integration of AR/VR and smart lighting for immersive experiences."
+  },
+  "Design": {
+    "Geographical Info": "Creative hubs include Milan, New York, and Tokyo.",
+    "Academic": "Programs in graphic design, industrial design, and UI/UX.",
+    "Employment & Markets": "Opportunities in branding, product development, and digital design.",
+    "Meta Trends": "Emphasis on human-centered design and AI-assisted creativity."
+  },
+  "AR Hardware": {
+    "Geographical Info": "Leading research in Silicon Valley, Shenzhen, and Europe.",
+    "Academic": "Studies in computer vision, optics, and human-computer interaction.",
+    "Employment & Markets": "Growing demand in gaming, medical training, and industrial applications.",
+    "Meta Trends": "Advancements in lightweight, wearable AR interfaces."
+  },
+  "Special Projects": {
+    "Geographical Info": "Emerging in maker spaces, research labs, and tech hubs.",
+    "Academic": "Custom coursework in embedded systems, IoT, and rapid prototyping.",
+    "Employment & Markets": "Roles in R&D, startups, and niche electronics manufacturing.",
+    "Meta Trends": "Convergence of open-source hardware and consumer tech."
+  },
+  "3D Printing": {
+    "Geographical Info": "Adoption in industries across the US, Europe, and Asia.",
+    "Academic": "Courses in additive manufacturing, material science, and prototyping.",
+    "Employment & Markets": "Jobs in engineering, healthcare, and product design.",
+    "Meta Trends": "Expansion into bio-printing and sustainable materials."
+  },
+  "Immersive Arts": {
+    "Geographical Info": "Expanding in performance spaces, galleries, and digital realms.",
+    "Academic": "Studies in interactive design, sound engineering, and scenography.",
+    "Employment & Markets": "Careers in theater, virtual production, and gaming.",
+    "Meta Trends": "Fusion of AI-driven creativity and live performance."
+  },
+  "Game Design": {
+    "Geographical Info": "Centers in gaming hotspots like Japan, US, and South Korea.",
+    "Academic": "Programs in interactive media, storytelling, and user experience.",
+    "Employment & Markets": "Opportunities in indie development, AAA studios, and education.",
+    "Meta Trends": "Integration of blockchain, AI, and player-driven content."
+  },
+  "Haptics - Product Design": {
+    "Geographical Info": "Innovation hubs in robotics and automotive industries.",
+    "Academic": "Courses in sensory feedback, human-machine interaction, and industrial design.",
+    "Employment & Markets": "Roles in consumer electronics, VR, and automotive interfaces.",
+    "Meta Trends": "Advancements in realistic touch feedback and accessibility design."
+  },
+  "Game Development": {
+    "Geographical Info": "Thriving in game studios and indie developer communities globally.",
+    "Academic": "Courses in programming, AI in games, and physics simulations.",
+    "Employment & Markets": "Careers in AAA studios, mobile gaming, and interactive experiences.",
+    "Meta Trends": "Growth in cloud gaming and AI-generated game content."
+  }
   }
   
